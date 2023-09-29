@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h5>Basic Calculator</h5>
+            <div class="display" id="view">0</div>
+            
+            <button class="item color-signo" onclick="clearVIew()">C</button>
+            <button class="item color-signo" onclick="appendToView('**')">**</button>
+            <button class="item color-signo" onclick="appendToView('%')">%</button>
+            <button class="item color-signo" onclick="appendToView('/')">/</button>
+            <button class="item color-number" onclick="appendToView('7')">7</button>
+            <button class="item color-number" onclick="appendToView('8')">8</button>
+            <button class="item color-number" onclick="appendToView('9')">9</button>
+            <button class="item color-signo" onclick="appendToView('*')">*</button>
+            <button class="item color-number" onclick="appendToView('4')">4</button>
+            <button class="item color-number" onclick="appendToView('5')">5</button>
+            <button class="item color-number" onclick="appendToView('6')">6</button>
+            <button class="item color-signo" onclick="appendToView('-')">-</button>
+            <button class="item color-number" onclick="appendToView('1')">1</button>
+            <button class="item color-number" onclick="appendToView('2')">2</button>
+            <button class="item color-number" onclick="appendToView('3')">3</button>
+            <button class="item color-signo" onclick="appendToView('+')">+</button>
+            <button class="item color-number" onclick="appendToView('-', true)">+/-</button>
+            <button class="item color-number" onclick="appendToView('0')">0</button>
+            <button class="item color-number" onclick="appendToView('.')">.</button>
+            <button class="item equals" onclick="calculate()">=</button>
+        </div>
+        <div class="historial">
+            <h6>Historial de Cálculos</h6>
+            <ul id="historial-list"></ul>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+
+
