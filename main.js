@@ -21,7 +21,7 @@ class Historial {
 
         this.historial.forEach((item, index) => {
             const listItem = document.createElement('li');
-            listItem.textContent = `Cálculo ${index + 1}: ${item.expresion} = ${item.resultado}`;
+            listItem.textContent = `${item.expresion} = ${item.resultado}`;
             historialList.appendChild(listItem);
         });
     }
